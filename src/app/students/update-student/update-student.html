@@ -1,0 +1,25 @@
+<h2>Update Student</h2>
+
+<div class="form-box">
+
+  <label>Student Name</label>
+  <input type="text" [(ngModel)]="student.name">
+
+  <label>Class</label>
+  <input type="text" [(ngModel)]="student.class">
+
+  <label>Section</label>
+  <input type="text" [(ngModel)]="student.section">
+
+  <label>Marks</label>
+  <input type="number" [(ngModel)]="student.marks">
+
+  <label>Grade</label>
+  <input type="text" [(ngModel)]="student.grade">
+
+  <div style="margin-top:20px; text-align:center;">
+    <button (click)="update()">Update Student</button>
+    <button routerLink="/teacher/students">Cancel</button>
+  </div>
+
+</div>

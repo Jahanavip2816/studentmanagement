@@ -1,0 +1,25 @@
+<h2>Add New Student</h2>
+
+<div class="form-box">
+
+  <label>Student Name</label><br>
+  <input type="text" [(ngModel)]="student.name" placeholder="Enter name"><br><br>
+
+  <label>Class</label><br>
+  <input type="text" [(ngModel)]="student.class" placeholder="Enter class"><br><br>
+
+  <label>Section</label>
+  <input type="text" [(ngModel)]="student.section" placeholder="Enter Section"><br><br>
+
+  <label>Marks</label><br>
+  <input type="number" [(ngModel)]="student.marks" placeholder="Enter marks"><br><br>
+
+  <label>Grade</label><br>
+  <input type="string" [(ngModel)]="student.grade" placeholder="Enter Grade"><br><br>
+
+  <label></label>
+
+  <button (click)="save()">Save Student</button>
+  <button routerLink="/teacher/students">Cancel</button>
+
+</div>
